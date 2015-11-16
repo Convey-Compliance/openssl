@@ -155,8 +155,8 @@ else
 	}
 
 # generate symbols.pdb unconditionally
-$app_cflag.=" /Zi /Fd\$(TMP_D)/app";
-$lib_cflag.=" /Zi /Fd\$(TMP_D)/lib";
+$app_cflag.=" /Z7 /Fd\$(TMP_D)/app";
+$lib_cflag.=" /Z7 /Fd\$(TMP_D)/lib";
 $lflags.=" /debug";
 
 $obj='.obj';
